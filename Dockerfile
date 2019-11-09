@@ -1,8 +1,8 @@
-FROM ruby:2.5.3-alpine
+FROM ruby:2.6.5-alpine
 
 #Install FFMPEG
 
-ENV FFMPEG_VERSION=3.0.2
+ENV FFMPEG_VERSION=4.2.1
 
 WORKDIR /tmp/ffmpeg
 
@@ -29,7 +29,7 @@ RUN apk update && \
     apk add libsodium-dev && \
     apk add jq
 
-# Install python3 and youtube-dl
+# Install python3 and youtube-dl 2019.11.05
 RUN apk add --no-cache python3 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
