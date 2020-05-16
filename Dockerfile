@@ -29,7 +29,7 @@ RUN apk update && \
     apk add libsodium-dev && \
     apk add jq
 
-# Install python3 and youtube-dl 2020.01.24
+# Install python3 and youtube-dl 2020.05.08
 RUN apk add --no-cache python3 && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
