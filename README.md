@@ -21,3 +21,8 @@ docker build -t nicolasderecho/discord_ruby:latest .
 docker push nicolasderecho/discord_ruby:latest
 ```
   
+If the docker push fails remember to verify your cli is logged in
+
+```
+docker login
+```
